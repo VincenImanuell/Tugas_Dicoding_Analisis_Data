@@ -8,8 +8,8 @@ from babel.numbers import format_currency
 
 @st.cache_data
 def load_data():
-    main_data = pd.read_csv("main_data.csv")
-    geolocation_data = pd.read_csv("geolocation.csv")
+    main_data = pd.read_csv("/dashboard/main_data.csv")
+    geolocation_data = pd.read_csv("/dashboard/geolocation.csv")
     return main_data, geolocation_data
 
 main_data, geolocation_data = load_data()
@@ -131,7 +131,7 @@ with st.expander("Lihat Penjelasan"):
 
 # Persebaran lokasi customer
 def plot_brazil_map(data):
-    brazil = mpimg.imread('brazil_map.jpg')
+    brazil = mpimg.imread('/dashboard/brazil_map.jpg')
     fig_map, ax_map = plt.subplots(figsize=(10, 10))
     data.plot(kind="scatter", x="geolocation_lng", y="geolocation_lat", ax=ax_map, alpha=0.3, s=0.3, c='blue')
     plt.axis('off')
@@ -144,7 +144,7 @@ plot_brazil_map(geolocation_data)
 with st.expander("Lihat Penjelasan"):
     st.write('Berdasarkan visualisasi data dengan peta di atas, ada lebih banyak pelanggan di bagian tenggara. Ada lebih banyak pelanggan di kota-kota besar seperti Sao Paulo, Rio de Janeiro, Rio Grande do Sul, dan Parana.')
 
-data_kota = pd.read_csv("customers_dataset.csv")
+data_kota = pd.read_csv("/dashboard/customers_dataset.csv")
 
 jumlah_customer = data_kota.groupby("customer_city")["customer_id"].count().reset_index()
 
