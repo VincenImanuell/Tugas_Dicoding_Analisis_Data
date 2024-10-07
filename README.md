@@ -17,7 +17,7 @@ Proyek ini bertujuan untuk menganalisis data e-commerce dengan menggunakan tekni
 - streamlit==1.39.0
 
 ## Instalasi
-1. Clone repositori ini:
+Clone repositori ini:
    ```bash
    git clone https://github.com/VincenImanuell/Tugas_Dicoding_Analisis_Data.git
    cd repo-name
