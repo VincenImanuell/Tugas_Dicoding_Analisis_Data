@@ -1,7 +1,7 @@
 # Proyek Analisis Data E-Commerce
 
 ## Deskripsi
-Proyek ini bertujuan untuk menganalisis data e-commerce dengan menggunakan teknik analisis dan visualisasi. Analisis ini mencakup pemahaman pola 
+Proyek ini bertujuan untuk menganalisis data e-commerce dengan menggunakan teknik analisis dan visualisasi.
 
 ## Fitur Utama
 - **Visualisasi Data**: Menyajikan visualisasi tentang data penjualan produk dan data customer.
