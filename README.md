@@ -19,7 +19,7 @@ Proyek ini bertujuan untuk menganalisis data e-commerce dengan menggunakan tekni
 ## Instalasi
 1. Clone repositori ini:
    ```bash
-   git clone 
+   git clone https://github.com/VincenImanuell/Tugas_Dicoding_Analisis_Data.git
    cd repo-name
    ```
 
